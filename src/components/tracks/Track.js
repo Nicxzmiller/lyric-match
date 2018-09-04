@@ -12,7 +12,7 @@ const Track = props => {
       >
         <div className="card-body">
           <label>
-            <i class="fas fa-user" /> Artist:
+            <i className="fas fa-user" /> Artist:
             <h5>{track.artist_name}</h5>
           </label>
           <br />
@@ -27,7 +27,7 @@ const Track = props => {
           </label>
           <br />
           <label>
-            <i class="fas fa-calendar-alt" /> Release Date:
+            <i className="fas fa-calendar-alt" /> Release Date:
             <h6>
               <Moment format="MM/DD/YYYY">{track.first_release_date}</Moment>
             </h6>

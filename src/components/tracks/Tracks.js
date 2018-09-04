@@ -14,7 +14,7 @@ class Tracks extends Component {
           } else {
             return (
               <React.Fragment>
-                <h3 className="text-center mb-4">Top 20 tracks</h3>
+                <h3 className="text-center mb-4">Top tracks</h3>
                 <div className="row">
                   {track_list.map(item => (
                     <Track key={item.track.track_id} track={item.track} />
