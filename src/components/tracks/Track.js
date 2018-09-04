@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Moment from "react-moment";
 
 const Track = props => {
   const { track } = props;
@@ -27,7 +28,9 @@ const Track = props => {
           <br />
           <label>
             <i class="fas fa-calendar-alt" /> Release Date:
-            <h6>{track.first_release_date}</h6>
+            <h6>
+              <Moment format="MM/DD/YYYY">{track.first_release_date}</Moment>
+            </h6>
           </label>
           <br />
           <Link
